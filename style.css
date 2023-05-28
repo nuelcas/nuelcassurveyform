@@ -24,6 +24,7 @@ form {
 fieldset {
   border: none;
   padding: 0.5rem;
+  width: fit-content;
 }
 label {
   display: block;
