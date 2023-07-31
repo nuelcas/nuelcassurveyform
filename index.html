@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuel Cas survey-form</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Nuel Cas Cleaners Survey Form</title>
+    <link rel="stylesheet" href="survey.css" />
   </head>
 
 <body>  
       <h1 id="title">Nuel Cas Cleaners Survey Form</h1>
       <p id="description">Thank you for trusting your cleaning needs to us</p>
-    <form id="survey-form">
+    <form id="survey-form" action="mailto:nuelcas.ao@gmail.com" method="post" enctype="text/plain">
       <fieldset>
         <label id="name=label">Name</label>
         <input id="name" type="text" required placeholder="Enter your name"/>
@@ -24,12 +24,14 @@
         <fieldset>
         <label for="services" id="name-label">Which of our services do you use most?</label> <select id="dropdown" name="services">
           <option value="" disabled selected>Select services</option>
-          <option value="1">Laundry</option>
-        <option value="2">Floor cleaning</option>
-        <option value="3">Window cleaning</option>
-        <option value="4">Our cleaning products</>
-        <option value="5">Prefer not to say</option>
-        <option value="6">Others</option>
+          <option value="1">Residential Cleaning</option>
+        <option value="2">Office Cleaning</option>
+        <option value="3">Post Construction Cleaning</option>
+        <option value="4">Hotel Cleaning</>
+        <option value="5">Retail Cleaning</>
+        <option value="6">Cleaning Products</>
+        <option value="8">Prefer not to say</option>
+        <option value="9">Others</option>
       </select>
       </fieldset>
 
@@ -50,11 +52,12 @@
           </fieldset>
    <fieldset>
           <label>What would you like to see improved?<small>(check all that apply)</small></label>
-          <label for="laundry">
-            <input type="checkbox" id="laundry" value="laundry" name="laundryservice" class="inline" />Laundry Services</input></label>
-      <label for="window-cleaning"><input type="checkbox" id="windowcleaning" value="window cleaning" name="windowcleaning" class="inline" />Window Cleaning</input></label>
-      <label for="floor-cleaning"><input type="checkbox" id="floorcleaning" value="floor cleaning" name="floorcleaning" class="inline" />Floor cleaning</input></label>
-      <label for="cleaning-products"><input type="checkbox" id="cleaningproducts" value="cleaning products" name="cleaningproducts" class="inline" />Cleaning products</input></label>
+      <label for="residential"><input type="checkbox" id="residential" value="residential" name="residential-cleaning" class="inline" />Residential Cleaning</input></label>
+      <label for="office"><input type="checkbox" id="office" value="office" name="office-cleaning" class="inline" />Office Cleaning</input></label>
+      <label for="retail"><input type="checkbox" id="retail" value="retail" name="retail-cleaning" class="inline" />Retail Cleaning</input></label>
+      <label for="post-construction"><input type="checkbox" id="postconstruction" value="post-construction" name="post-construction-cleaning" class="inline" />Post Construction Cleaning</input></label>
+      <label for="hotel-cleaning"><input type="checkbox" id="hotel" value="hotel-cleaning" name="hotel-cleaning" class="inline" />Hotel Cleaning</input></label>
+      <label for="cleaning-products"><input type="checkbox" id="cleaningproducts" value="cleaning-products" name="cleaning-products" class="inline" />Cleaning products</input></label>
       </fieldset>
       <fieldset>
           <label for="comments"> Any comments or suggestion?</label>
